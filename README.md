@@ -10,15 +10,15 @@ A make.fun entry for the **Make the Judge Smile** competition
 `main.ts` (Node 22, stdlib only) writes exactly one warm line to
 `/output/entry.txt` (`$MAKEFUN_OUTPUT_DIR/entry.txt` when set):
 
-> At 8 a.m. a stranger held the elevator, then held it again at the next floor for a man with a cake — I rode up with two birthdays and no invitation.
+> At 8 a.m. a stranger stopped the lift doors for me, then stopped them again at the next floor for a man with a cake — I rode up with two birthdays and no invitation.
 
-148 characters, 150 bytes, one line. The line is a fixed string,
+165 characters, 167 bytes, one line. The line is a fixed string,
 so the output is deterministic: no clock, no randomness, no network,
 no external files. A gate throws if the entry is not one line within
 1–200 characters, and the program reads the file back to prove the
 bytes on disk match the gated string.
 
-The pick: a stranger holds the lift twice in one morning — once for
+The pick: a stranger stops the lift doors twice in one morning — once for
 the narrator, once for a man with a cake — and the narrator rides up
 with two birthdays and no invitation. The twist lands in the last
 nine words, where two celebrations collide with one exclusion; the
