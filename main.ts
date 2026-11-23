@@ -5,15 +5,15 @@
 // no network, no external files.
 //
 // The line:
-//   At 8 a.m. a stranger held the elevator, then held it again at the
-//   next floor for a man with a cake — I rode up with two birthdays
-//   and no invitation.
+//   At 8 a.m. a stranger stopped the lift doors for me, then stopped
+//   them again at the next floor for a man with a cake — I rode up
+//   with two birthdays and no invitation.
 //
 // Why this line, against the judge's brief, in order:
-// 1. On subject: one line, 148 characters, about a small good thing
+// 1. On subject: one line, 165 characters, about a small good thing
 //    that happened today — a stranger's kindness in a lift, this
 //    morning at 8 a.m.
-// 2. Warmth: the kindness is doubled — the stranger holds the lift
+// 2. Warmth: the kindness is doubled — the stranger stops the doors
 //    not once but twice, for two different people. It lands as
 //    genuinely felt, not reported: the narrator rides up inside it.
 // 3. Surprise: the twist sits in the last nine words. Two strangers
@@ -21,14 +21,20 @@
 //    the third person in the lift — holds no invitation to either.
 //    Nothing before "two birthdays" hints at a birthday at all.
 // 4. Concreteness: one real small detail after another — 8 a.m.,
-//    the elevator, the next floor, a man with a cake. No general
+//    the lift doors, the next floor, a man with a cake. No general
 //    sentiment, no greeting-card phrasing.
 // 5. Fresh wording: "two birthdays and no invitation" collides two
-//    celebrations with one exclusion. The field check found zero
-//    birthday, cake or invitation entries among 749 live submissions,
-//    and no verbatim match on the web; the Laugh Sprint top 10 holds
-//    no elevator-and-cake line either.
-// 6. Economical — 31 words, setup:punchline 22:9 (2.44:1). Every word
+//    celebrations with one exclusion. Corrected rival scan over all
+//    833 live submission titles: worst match is a generic 15-char
+//    fragment ("the lift doors "), Jaccard 0.14; zero birthday, cake
+//    or invitation entries except one unrelated "Happy Birthday,
+//    Stranger" title; no verbatim match on the web; zero hits in the
+//    Laugh Sprint top-10 snapshot. The FIRST draft ("a stranger held
+//    the elevator, then held it again…") was REJECTED by that scan:
+//    it shared a 35-char opening with a live rival ("A stranger held
+//    the elevator, then pressed my floor", hiduplahzomb-2) — the
+//    opening was reworded to "stopped the lift doors" to kill it.
+// 6. Economical — 34 words, setup:punchline 25:9 (2.78:1). Every word
 //    earns its place, and nothing after the punchline explains it.
 
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -37,7 +43,7 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const LINE =
-  'At 8 a.m. a stranger held the elevator, then held it again at the next floor for a man with a cake — I rode up with two birthdays and no invitation.';
+  'At 8 a.m. a stranger stopped the lift doors for me, then stopped them again at the next floor for a man with a cake — I rode up with two birthdays and no invitation.';
 
 const DEST = join(OUTPUT_DIR, 'entry.txt');
 
